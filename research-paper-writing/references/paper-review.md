@@ -1,4 +1,4 @@
-# Paper Review (Paper Rview)
+# Paper Review
 
 ## Goal
 
@@ -22,6 +22,7 @@ If a claim is not supported, either add evidence or weaken/remove the claim.
 1. Sufficient contribution (for example: novel task, novel pipeline, novel module, novel design choices, new experimental findings, or new insight).
 2. Better empirical performance than prior methods under fair comparisons.
 3. Sufficient comparison experiments and ablation studies.
+4. For robotics/UAV/embodied AI papers: credible evidence that the method works under realistic physical, sensing, compute, and timing constraints.
 
 ## Common Rejection Dimensions
 
@@ -32,6 +33,7 @@ If a claim is not supported, either add evidence or weaken/remove the claim.
 | 3. Weak empirical effect     | 3.1 Improvement over prior methods is only marginal.<br /> 3.2 Even if better than previous methods, absolute performance is still not strong enough.                                                                                                                                      |
 | 4. Incomplete evaluation     | 4.1 Missing ablation studies.<br />4.2 Missing important baselines or important evaluation metrics.<br /> 4.3 Datasets are too simple to prove the method truly works.                                                                                                                    |
 | 5. Problematic method design | 5.1 Experimental setting is unrealistic.<br />5.2 Method has technical flaws and appears unreasonable.<br />5.3 Method is not robust and needs per-scenario hyperparameter tuning. <br /> 5.4 New design introduces stronger limitations than its benefits, leading to negative net value. |
+| 6. Robotics/UAV evidence gap | 6.1 Real-world or high-fidelity validation is missing despite deployment claims.<br />6.2 Platform, sensors, compute, latency, or controller interface are underspecified.<br />6.3 Safety, robustness, or real-time claims are overstated relative to the tests. |
 
 ## End-of-Paper Self-Review Question List
 
@@ -76,6 +78,14 @@ Use each question to trigger concrete edits before submission.
 3. Is the method robust without heavy per-case hyperparameter retuning?
 4. Do benefits outweigh added complexity and new limitations?
 5. Could reviewers reasonably argue that the net benefit is negative?
+
+### 6. Robotics/UAV/Embodied AI Evidence
+
+1. Are platform, sensors, compute, controller, update rates, and operating conditions specified?
+2. Are offline, simulation, high-fidelity simulation, and real-world claims clearly separated?
+3. Are robustness tests aligned with the claimed deployment conditions?
+4. Are runtime, latency, communication, and safety-relevant constraints reported when relevant?
+5. Are failure cases shown and used to scope the method honestly?
 
 ## Adversarial Writing Workflow
 

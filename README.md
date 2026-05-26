@@ -15,7 +15,7 @@ This repository currently provides one skill package:
 
 - `research-paper-writing/`
   - `SKILL.md`: core workflow and usage rules
-  - `references/`: section-specific writing guides and templates
+  - `references/`: section-specific writing guides, robotics/UAV domain rules, and templates
   - `agents/openai.yaml`: agent metadata
 
 Typical use cases:
@@ -23,6 +23,8 @@ Typical use cases:
 - Drafting or rewriting Abstract / Introduction / Method / Experiments / Conclusion for Robotics/UAV papers
 - Improving paragraph flow and section logic
 - Checking claim-evidence alignment
+- Planning simulation, high-fidelity simulation, and real-robot/UAV evidence
+- Reviewing platform assumptions, runtime, sensors, safety scope, and robustness claims
 - Running pre-submission self-review from a reviewer mindset
 
 ## Installation

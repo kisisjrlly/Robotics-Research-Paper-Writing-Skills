@@ -8,6 +8,8 @@ Write the Method section clearly by following this sequence:
 2. Draw a pipeline figure sketch.
 3. Write the method section step by step.
 
+For robotics, UAV, and embodied AI papers, also make the closed-loop system explicit: platform, sensors, state/action interface, timing, compute, coordinate frames, assumptions, and failure handling. See `references/robotics-uav-ai.md` before drafting system-level Method text.
+
 ## Pre-Writing Questions
 
 `Before writing Method, first answer: (1) what modules exist in the method, and (2) for each module, what is the workflow, why this module is needed, and why this module works.`
@@ -22,6 +24,14 @@ Recommended organization:
 - Why does this module work?
 
 3. Organize answers as a mind map or a table for clarity.
+
+Robotics/UAV additions:
+
+1. What is the robot platform, sensor suite, compute unit, controller interface, and operating environment?
+2. What are the state, observation, action/control command, objective, and constraints?
+3. Which modules run onboard, offboard, or offline, and at what update rate?
+4. Which assumptions are physical, algorithmic, or experimental?
+5. What happens when perception, localization, communication, or planning fails?
 
 ## Method Writing Steps
 
@@ -45,6 +55,7 @@ Definition:
 
 1. Describe representation/network/data-structure details.
 2. Describe the forward process clearly: given input -> step 1 -> step 2 -> step 3 -> output.
+3. For closed-loop robot systems, describe how the module receives sensor/state input and sends commands, maps, trajectories, costs, or safety signals to downstream modules.
 
 ### 2) Motivation of This Module
 
@@ -182,6 +193,8 @@ flowchart TB
 ## Implementation Details
 
 `Implementation details include hyperparameters (e.g., layer count, feature dimensions), coordinate transforms/normalization, and other practical details. Put them near the end of Method or in a dedicated Implementation Details section.`
+
+For robotics/UAV papers, implementation details should include platform model, sensors, compute hardware, onboard/offboard split, sampling rates, controller frequency, simulator version when relevant, calibration/synchronization assumptions, and runtime/latency measurement protocol.
 
 ## Example Bank
 

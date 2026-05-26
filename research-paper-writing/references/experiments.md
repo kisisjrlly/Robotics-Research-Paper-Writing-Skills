@@ -4,6 +4,8 @@
 
 Convince reviewers with complete evidence on effectiveness, causality, and practical value.
 
+For robotics, UAV, and embodied AI papers, "practical value" must include realistic system evidence: closed-loop performance, platform constraints, latency, robustness, safety-relevant failures, and the boundary between simulation and real-world validation. See `references/robotics-uav-ai.md` for the domain evidence ladder.
+
 ## Three Core Questions
 
 1. Is the method better than strong baselines?
@@ -19,6 +21,10 @@ Convince reviewers with complete evidence on effectiveness, causality, and pract
    - Run demos/evaluations on harder or out-of-distribution settings.
    - Add stress-test scenarios (more complex scenes, rarer cases, noisier inputs, or stricter constraints).
    - Report both gains and failure modes to show realistic boundaries.
+4. Can the method run under robot/UAV deployment constraints?
+   - Report runtime, update rate, onboard/offboard compute, latency, and memory when relevant.
+   - Test realistic disturbances such as sensor noise, localization drift, wind, payload changes, communication loss, dynamic obstacles, or lighting variation.
+   - Separate offline, simulation, high-fidelity simulation, and real-world results so each claim has the right evidence.
 
 ## Experiment Planning
 
@@ -92,6 +98,8 @@ flowchart TB
 1. One core ablation table for all major contributions.
 2. Several focused mini-ablations for module-level design choices.
 3. Matching qualitative visual results for each important ablation.
+4. For robot systems, ablate the closed-loop role of each module, not only offline network scores.
+5. Include runtime or deployment-cost ablations when the method claims real-time or onboard feasibility.
 
 ## Experimental Rigor Checklist
 
@@ -100,3 +108,6 @@ flowchart TB
 3. Is ablation tied to every key design claim?
 4. Are claims in Abstract/Introduction supported by reported numbers?
 5. Are limitations of evaluation scope explicitly stated?
+6. For robotics/UAV work, are platform, sensors, compute, update rate, environment, and safety constraints reported?
+7. Are simulation-only claims clearly separated from real-world deployment claims?
+8. Are failure cases and stress-test results shown for the claimed operating envelope?

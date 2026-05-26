@@ -4,6 +4,8 @@
 
 Position your work against the most relevant lines of research, and make your novelty easy to verify.
 
+For robotics, UAV, and embodied AI papers, Related Work should compare both algorithmic mechanisms and system assumptions: sensing, dynamics, compute, environment, real-world validation, and safety or robustness constraints.
+
 ## Workflow
 
 1. List directly competing and recent baseline papers first.
@@ -18,6 +20,13 @@ Use 2-4 focused topics, for example:
 1. Task-specific mainstream methods.
 2. Methods closest to your core idea.
 3. Auxiliary techniques your method builds on.
+
+Robotics/UAV topic options:
+
+1. Classical robotics methods: model-based planning/control, SLAM/state estimation, optimization, MPC, sampling-based planning, or geometric control.
+2. Learning-based methods: supervised learning, imitation learning, reinforcement learning, representation learning, foundation-model-based robotics, or sim-to-real learning.
+3. System and deployment work: onboard autonomy, real-time perception, UAV platforms, multi-robot coordination, communication-constrained autonomy, or field robotics.
+4. Benchmarks and datasets: simulation environments, real-world datasets, evaluation protocols, and diagnostic benchmarks.
 
 ## Paragraph Template
 
@@ -39,3 +48,5 @@ Use 2-4 focused topics, for example:
 2. Is each topic connected to your problem setting?
 3. Is your difference explained in technical terms, not marketing terms?
 4. Is citation coverage complete for all core claims?
+5. Are the assumptions of competing methods compared fairly, especially sensors, compute, platform, and real-world validation?
+6. Does the text explain whether the closest baselines are offline, simulated, or deployed on real robots/UAVs?

@@ -13,7 +13,7 @@
 
 - `research-paper-writing/`
   - `SKILL.md`：核心流程与使用规则
-  - `references/`：按章节拆分的写作指南与模板
+  - `references/`：按章节拆分的写作指南、机器人/无人机领域规则与模板
   - `agents/openai.yaml`：Agent 元信息
 
 常见使用场景：
@@ -21,6 +21,8 @@
 - 撰写或重写机器人/无人机等领域的 Abstract / Introduction / Method / Experiments / Conclusion
 - 改善段落衔接与章节逻辑
 - 做 claim-evidence 对齐检查
+- 规划仿真、高保真仿真和真实机器人/无人机实验的证据链
+- 检查平台假设、传感器、算力、实时性、安全边界和鲁棒性声明
 - 提交前从 reviewer 视角进行自审
 
 ## 安装方式

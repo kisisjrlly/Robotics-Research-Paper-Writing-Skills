@@ -1,4 +1,4 @@
 interface:
-  display_name: "Research Paper Writing"
-  short_description: "Academic paper writing and section-level refinement"
-  default_prompt: "Use $research-paper-writing to improve my paper's structure, flow, and section writing quality."
+  display_name: "Robotics Paper Writing"
+  short_description: "Robotics, UAV, and AI paper writing refinement"
+  default_prompt: "Use $research-paper-writing to improve my robotics/UAV paper's story, method clarity, experiments, and claim-evidence alignment."
