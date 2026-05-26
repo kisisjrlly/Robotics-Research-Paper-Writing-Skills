@@ -1,12 +1,11 @@
-# Skills: Research Paper Writing
+# Skills: Robotics Research Paper Writing
 
 > 重要归属说明
-> 本仓库中的大部分写作经验与方法论来自彭思达老师公开的学习笔记：
-> https://pengsida.notion.site/c1a22465a0fa4b15a12985223916048e
-> 彭老师原始仓库：
-> https://github.com/pengsida/learning_research
-> 衷心感谢彭思达老师把这些宝贵经验公开分享出来。
-> 我主要做了资料整理、结构化适配，以及 Skills 封装。
+> 
+> 本项目是基于 [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) 开发与修改的。
+> 原始仓库中的核心写作经验与方法论来自彭思达老师公开的学习笔记（[Notion链接](https://pengsida.notion.site/c1a22465a0fa4b15a12985223916048e)）。衷心感谢彭思达老师和 Master-cai 将这些宝贵经验开源分享出来。
+> 
+> **未来规划：** 接下来，本项目将使用这些基础 Skill 为底座，重点针对 **Robotics（机器人学）**，尤其是 **无人机 + 人工智能 (UAVs + AI)** 领域的学术论文写作进行深度适配和专用内容的调整。
 
 ## 仓库介绍
 
@@ -19,7 +18,7 @@
 
 常见使用场景：
 
-- 撰写或重写 Abstract / Introduction / Method / Experiments / Conclusion
+- 撰写或重写机器人/无人机等领域的 Abstract / Introduction / Method / Experiments / Conclusion
 - 改善段落衔接与章节逻辑
 - 做 claim-evidence 对齐检查
 - 提交前从 reviewer 视角进行自审
@@ -76,8 +75,7 @@ cp -R research-paper-writing "$HOME/.gemini/skills/"
 
 ## 致谢
 
-再次说明：仓库核心知识来源于彭思达老师公开笔记；我主要负责整理与 Skills 化适配。
-彭老师原始仓库：https://github.com/pengsida/learning_research
+再次说明，本项目基于 [Master-cai/Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) 进行扩展。仓库核心知识来源于彭思达老师的公开笔记。彭老师原始仓库：[pengsida/learning_research](https://github.com/pengsida/learning_research)。
 
 ## 许可证
 
